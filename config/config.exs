@@ -27,3 +27,6 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :ua_inspector,
+  database_path: Path.join(Mix.Utils.mix_home, "ua_inspector")
